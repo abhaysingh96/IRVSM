@@ -1,6 +1,6 @@
 click==7.1.2
 joblib==0.17.0
-lxml==4.6.1
+lxml
 nltk==3.5
 regex==2020.10.15
 tqdm==4.50.2

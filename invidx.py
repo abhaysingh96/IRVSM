@@ -36,7 +36,7 @@ def read_dataset(collpath,indexfile):
 			i+=1
 			continue
 		print(file)
-		"""
+		""
 		#if not os.path.is_file(file):
 		#	continue
 		#print("Scanning file {}".format(i+1))
@@ -202,7 +202,6 @@ def read_dataset(collpath,indexfile):
 	with gzip.GzipFile(str(indexfile)+'.idx', 'w') as f:
 		f.write(json.dumps(POSTINGS).encode('utf-8'))  
 	
-
 	"""
 	with gzip.open(str(indexfile)+'.dict', 'wt') as f:
 		json.dump(INDEX, f)
@@ -226,3 +225,5 @@ if __name__ == '__main__':
 	#print("Executing...")
 	
 	read_dataset(collpath,indexfile)
+	
+	"""
